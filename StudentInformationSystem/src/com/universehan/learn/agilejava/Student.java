@@ -1,14 +1,14 @@
 package com.universehan.learn.agilejava;
 
 public class Student {
+	String name;
 
 	public Student(String name) {
-		// TODO Auto-generated constructor stub
+		this.name = name;
 	}
 	
-	public String sayHello()
-	{
-		return "Hello";
+	public String getName() {
+		return name;
 	}
 
 }

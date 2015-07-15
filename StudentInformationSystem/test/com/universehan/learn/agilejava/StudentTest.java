@@ -9,22 +9,15 @@ public class StudentTest
 	@Test
 	public void create()
 	{
-		Student me = new Student("Jane Doe");
-		Student you = new Student("Jane Doe");
+		final String firstStudentName = "Jane Doe";
+		Student student = new Student(firstStudentName);
+		assertEquals(firstStudentName, student.getName());
 		
-//		me.equals("Jane Doe";)
-	
-//		me.sayHaha();
+		final String secondStudentName = "Joe Blow";
+		Student secondStudent = new Student(secondStudentName);
+		assertEquals(secondStudentName, secondStudent.getName());
 	}
 	
 	
 	
-	@Test
-	public void equalityTest()
-	{
-		String nullValue = null;
-		
-		
-		assertTrue( nullValue.toString() == "");
-	}
 }
